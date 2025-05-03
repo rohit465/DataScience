@@ -175,4 +175,82 @@ print(title_string.capitalize())
 print(string +' ' + title_string)
 print(string * 5)
 
-print('2' + 3)
+#print('2' + 3) # type error
+
+string1 = "apple"
+string2 = "banana"
+
+print(string1 == string2)
+print(string1 != string2)
+print(string1 < string2)
+print(string1 > string2)
+print(string1 <= string2)
+print(string1 >= string2)
+
+'''  
+In String Comparison happens with the unicode 
+a = 97, b = 98  then, a < b
+
+'''
+
+print(ord('a')) #97
+print(ord('b')) # 98
+
+print(a < b)
+
+print("cat" > "catalog") # till cat it's equal but later 'a' in catalog is is greater
+
+print("Zebra" < "apple") # Z = 90
+
+# replace()
+
+og_string = "Hello,World!" 
+new_string = og_string.replace("World", "Rohit")  
+print(new_string)
+
+
+#split()
+print(og_string.split())
+
+
+#strip() - removes whitespace in beginneing or end
+
+line = '       Ich trinke gern Wasser, Milch, Orangenzaft    '
+stripped_line = line.strip();
+print(line, stripped_line)
+print(id(line))
+print(id(stripped_line))
+
+
+# index() -  return the initial index of letter/world or valueError if not present 
+print(stripped_line.index('Milch'))
+
+
+# find() - returns the initial index of letter/word or returns -1
+print(stripped_line.find('Rohit'))
+
+#count() - returns the no. of terms present in string
+print(stripped_line.count('a')) # 3
+print(stripped_line.count('Rohit')) # 0
+
+'''
+isalpha() - "stripped line" contains a space character (' '), which is not an alphabetic character.
+The .isalpha() method returns True only if all characters in the string are alphabetic (i.e., only letters, no spaces, numbers, or symbols).
+
+'''
+print("stripped line".isalpha())
+
+# isnum
+#isdigit
+#isupper
+#islower
+
+
+# Formatting String
+age = 24
+text = f'Mein Name ist Rohit und Ich bin {age} (vierundzwanzig) years old.'
+print(text)
+
+
+
+
