@@ -12,7 +12,7 @@ Dictionaries - Unordered Collections of key-value pair, Mutable
 
 '''
 
-list = [1,2,3]  # list with same data type
+list1 = [1,2,3]  # list with same data type
 list1 = ['rohit', 23, True] #List with multiple data type
 
 list2 = [1, [2,3,4], [5,6,7,8]] # nested list
@@ -98,5 +98,83 @@ print(num_list)
 alpha_list = ['as', 'df', 'kj']
 result = "- ".join(alpha_list)
 print(result)
+
+
+
+'''
+
+Tuples
+
+BuitIn Functions
+     1. min()
+     2. max()
+     3. count()
+     4. index()
+
+'''
+
+my_tuple = (1, 2, 3)
+print(my_tuple[2])
+
+tuplee = (1, 2, 3, 56, True, False, [11, 12, 13])
+print(tuplee[-1][1])
+print(tuplee[1:7])
+print(tuplee[:-1])
+print(min(my_tuple))
+print(max(my_tuple))
+
+
+#  Convert Tuple into List
+
+tuplee2 = ('Rohit', 'Rohan', 'Pranav', 'Kunal')
+list1 = list(tuplee2)
+print(list1)
+
+list1.extend(['Hardik', 'Shyam'])
+n_tuple = tuple(list1)
+print(n_tuple)
+
+my_tuple = (1, 2, 3, 4, 5, 6, 7)
+a, *b, c = my_tuple
+print(a, b, c) # 1 [2, 3, 4, 5, 6] 7   b will take as list as by default
+
+combined = my_tuple + tuplee2
+print(combined)
+
+'''
+     List      |      Tuple
+----------------------------------
+     Mutable   |     Immutable
+     []        |         ()
+     Slower    |     Faster - better performance
+
+
+
+'''
+
+
+
+
+
+
+
+
+'''
+Sets
+     - unordered
+     - mutable
+     - unindexed
+     - dupicates not allowed 
+'''
+
+
+set1 = {1, 2, 3, 5, 34,1, 2, 3, 11}
+print(set1)
+
+my_set = 'Hello'
+print(set(my_set))
+
+my_sett = {[1,2,3,4]}
+print(my_sett) #TypeError: unhashable type: 'list'
 
 
